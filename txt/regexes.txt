@@ -1,0 +1,20 @@
+Transcript for tournament #(\d+) requested by (\w+)
+
+\*+[ #]*(?<handNumber>\d+) *\*+
+
+PokerStars Hand #(?<handID>\d+): Tournament #(?<tounamentID>\d+), (?<buyin>\$[\d.]+)\+(?<tax>\$[\d.]+) USD (?<gameType>[\w' ]+)- Level (?<levelNumber>[IVXDCM]+) (?<smallBig>\(\d+\/\d+\)) - (?<localTime>\d{4}\/\d{2}\/\d{2} \d{2}:\d{2}:\d{2})
+
+Table '(?<tableID>[\d ]+)' (?<tableMax>[^ ]+) Seat #(?<buttonSeat>\d) is the button
+
+Seat (?<seatID>\d+): (?<player>[\w ]+)\((?<chips>\d+) in chips\)
+
+(?<player>[\w ]+): posts small blind (?<chips>\d+)
+
+(?<player>[\w ]+): posts big blind (?<chips>\d+)
+
+(?<=\*{3} HOLE CARDS \*{3}\s)Dealt to (?<player>[\w ]+) \[(?<card1>[0-9JQKA][hdcs]) (?<card2>[0-9TJQKA][hdcs])\]
+
+(?<player>[\w ]+) (has returned|has timed out|is sitting out)
+(?<player>[\w ]+): (?<action>checks|folds|calls|raises to) *(?<chips>\d*)
+
+\*{3} FLOP \*{3}\s\[(?<card1>[0-9JQKA][hdcs]) (?<card2>[0-9TJQKA][hdcs]) (?<card3>[0-9TJQKA][hdcs])\]
