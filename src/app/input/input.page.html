@@ -1,0 +1,13 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Input Hand History</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-item>
+    <ion-label position="stacked">Hand History Text</ion-label>
+    <ion-textarea [attr.rows]="28" [(ngModel)]="handHistory"></ion-textarea>
+  </ion-item>
+  <ion-button expand="block" (click)='processHH()'>Process Hand History</ion-button>
+</ion-content>
